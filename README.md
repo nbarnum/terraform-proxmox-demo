@@ -14,7 +14,7 @@ References:
 
 ## Usage
 
-1. Copy the `create_ubuntu_cloud_init.sh` script to a PVE host, using `172.20.1.21` in this example:
+1. Copy the `create_ubuntu_cloud_init.sh` script to a PVE host, using `172.20.1.21` in this example
 
     ```shell
     $ scp scripts/create_ubuntu_cloud_init.sh root@172.20.1.21:~/
@@ -22,7 +22,7 @@ References:
 
 2. Run the `create_ubuntu_cloud_init.sh` script to create an Ubuntu VM template
 
-    Make sure to review the script, making needed changes for your environment (i.e. changing the default Ubuntu version).
+    Review the script, making needed changes for your environment (i.e. changing the default Ubuntu version).
 
     ```shell
     $ ssh root@172.20.1.21
@@ -31,7 +31,7 @@ References:
 
 3. Login to the PVE admin UI and confirm the VM template was created as expected
 
-4. On you local machine, export environment variables for PVE username and password
+4. Back on your local machine, export environment variables for PVE username and password
 
     Replace this username and password with your PVE creds:
 
@@ -54,10 +54,9 @@ References:
     ...
     ```
 
-
 6. Update variables in the `variables.tf` file
 
-    Review all variables and makes sure to match them to your environment. Search for `TODO:` to make identifying needed updates.
+    Review all variables and makes sure to match them to your environment. Search for `TODO:` to make identifying needed updates easier.
 
     Example VM config:
 
@@ -107,7 +106,7 @@ References:
     Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
     ```
 
-8. If all went well, a VM should be created on the targeted PVE host.
+8. If all went well, a VM should be created on the targeted PVE host
 
     You should now be able to ssh to the VM using the default `ubuntu` username and the IP specified in the VM configuration (172.20.2.22 in my example).
 
