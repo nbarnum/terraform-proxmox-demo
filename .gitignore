@@ -1,0 +1,10 @@
+.envrc
+.terraform.lock.hcl
+.terraform.tfstate.lock.info
+.terraform/
+*.log
+*.out
+secrets.tfvars
+terraform-provider-*-tmp-*
+terraform.tfstate
+terraform.tfstate.backup
